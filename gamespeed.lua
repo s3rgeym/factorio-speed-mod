@@ -1,24 +1,24 @@
-local gamespeed = {}
+local M = {}
 
-gamespeed.DEFAULT = 1
-gamespeed.MODIFIERS = { 0.5, 0.75, 1, 1.5, 2, 3, 5, 10 }
+M.MODIFIERS = { 0.25, 0.5, 0.75, 1, 1.5, 2, 4 }
+M.DEFAULT = M.MODIFIERS[3] 
 
-function gamespeed.next(current)
-  for i = 1, #gamespeed.MODIFIERS do
-    if gamespeed.MODIFIERS[i] > current then
-      return gamespeed.MODIFIERS[i]
+function M.next(cur)
+  for i = 1, #M.MODIFIERS do
+    if M.MODIFIERS[i] > cur then
+      return M.MODIFIERS[i]
     end
   end
-  return current
+  return cur
 end
 
-function gamespeed.prev(current)
-  for i = #gamespeed.MODIFIERS, 1, -1 do
-    if gamespeed.MODIFIERS[i] < current then
-      return gamespeed.MODIFIERS[i]
+function M.prev(cur)
+  for i = #M.MODIFIERS, 1, -1 do
+    if M.MODIFIERS[i] < cur then
+      return M.MODIFIERS[i]
     end
   end
-  return current
+  return cur
 end
 
-return gamespeed
+return M
