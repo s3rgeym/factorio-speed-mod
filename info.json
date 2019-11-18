@@ -1,0 +1,11 @@
+{
+  "name": "speed-mod",
+  "version": "0.1.0",
+  "title": "Speed Mod",
+  "description": "",
+  "author": "s3rgeym",
+  "contact": "yamldeveloper@proton.me",
+  "homepage": "https://github.com/s3rgeym/speed-mod",
+  "factorio_version": "0.17",
+  "dependencies": ["base"]
+}
