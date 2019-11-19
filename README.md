@@ -8,7 +8,7 @@ The mod changes the speed of the game.
 
 | Key Sequence | Description |
 | -- | -- |
-| `MINUS` | Decrease game speed |
+| `MINUS` | Reduce game speed |
 | `EQUALS` | Increase game speed |
 
 ## Installation
