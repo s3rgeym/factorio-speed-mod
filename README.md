@@ -13,4 +13,4 @@ The mod changes the speed of the game.
 
 ## Installation
 
-Move files into `%AppData%\Roaming\Factorio\mods\speed-mod_0.1.0`.
+Move files into `%AppData%\Roaming\Factorio\mods\speed_mod_0.1.0`.
